@@ -1,0 +1,304 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #fdf5e6;
+    /* Cor de fundo amarelada */
+    background-image: url('img/fundo.jpeg');
+    /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #a59b78;
+    /* Cor de fundo acima da linha preta */
+    position: sticky;
+    /* Faz o cabeçalho ficar fixo ao rolar */
+    top: 0;
+    /* Fica colado no topo */
+    z-index: 1000;
+    /* Garante que fique acima de outros elementos */
+    border-bottom: 2px solid black;
+    /* Adiciona uma linha preta na parte inferior */
+}
+
+/* Estilo para títulos */
+header h1 {
+    color: #ffcc00;
+    /* Cor do texto do título */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    /* Aumenta o espaço entre o título e a navegação */
+}
+
+/* Estilo da navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    /* Mantém o espaçamento entre o título e a navegação */
+    display: flex;
+    justify-content: center;
+    /* Centraliza os botões de navegação */
+    gap: 15px;
+    /* Espaçamento entre os botões */
+}
+
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    background-color: white;
+    color: #ffcc00;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+
+
+/* Estilo das caixas de texto */
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+}
+
+/* Estilo para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    margin-top: auto;
+    position: relative;
+}
+
+/* Estilo para as caixas de culto */
+.caixas-culto {
+    display: flex;
+    /* Permite que as caixas fiquem lado a lado */
+    justify-content: center;
+    /* Centraliza as caixas horizontalmente */
+    margin: 20px auto;
+    /* Margem superior/inferior e centraliza */
+    max-width: 1000px;
+    /* Largura máxima do contêiner */
+}
+
+.culto {
+    width: 200px;
+    /* Largura fixa para cada caixa */
+    height: 80px;
+    /* Altura fixa para cada caixa */
+    margin: 10px;
+    /* Espaçamento entre as caixas */
+    padding: 10px;
+    /* Espaçamento interno */
+    border: 1px solid #ffcc00;
+    /* Borda amarela */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    background-color: #fff;
+    /* Fundo branco */
+    text-align: center;
+    /* Centraliza o texto */
+    display: flex;
+    /* Usar flexbox para centralizar o texto */
+    align-items: center;
+    /* Alinha verticalmente ao centro */
+    justify-content: center;
+    /* Alinha horizontalmente ao centro */
+}
+
+
+/* Estilo para o título de contato */
+main h2 {
+    text-align: center;
+    /* Centraliza o título */
+    color: #ffcc00;
+    /* Cor do texto */
+    margin: 20px 0;
+    /* Margem em cima e embaixo */
+}
+
+/* Estilo para o parágrafo */
+main p {
+    text-align: center;
+    /* Centraliza o texto do parágrafo */
+    font-size: 1.2em;
+    /* Tamanho da fonte */
+    color: #333;
+    /* Cor do texto */
+    margin: 10px 0;
+    /* Margem em cima e embaixo */
+}
+
+/* Estilo para o body */
+body {
+    margin: 0;
+    /* Remove a margem padrão */
+    height: 100vh;
+    /* Altura total da viewport */
+    display: flex;
+    flex-direction: column;
+    /* Organiza em coluna */
+}
+
+/* Estilo para centralizar o conteúdo no <main> */
+main {
+    display: flex;
+    flex-direction: column;
+    /* Organiza o conteúdo em coluna */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+    /* Centraliza os itens verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    min-height: 80vh;
+    /* Garante que o conteúdo ocupe boa parte da tela */
+    padding: 20px;
+}
+
+/* Estilo para o botão "Saiba Mais" */
+.botao-saiba-mais {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+/* Efeito hover para o botão */
+.botao-saiba-mais:hover {
+    background-color: #e6b800;
+}
+
+
+/* Estilo para o main */
+main {
+    display: flex;
+    justify-content: flex-start;
+    /* Alinha ao topo */
+    align-items: center;
+    /* Centraliza horizontalmente */
+
+}
+
+/* Estilo para o contêiner de contato */
+.contato {
+    text-align: center;
+    /* Centraliza o texto dentro do contêiner */
+}
+
+/* Estilo para o título de contato */
+.contato h2 {
+    color: #ffcc00;
+    /* Cor do texto */
+    margin: 10px 0;
+    /* Margem em cima e embaixo */
+}
+
+/* Estilo para o parágrafo */
+.contato p {
+    font-size: 1.2em;
+    /* Tamanho da fonte */
+    color: #333;
+    /* Cor do texto */
+    margin: 5px 0;
+    /* Margem em cima e embaixo */
+}
+
+/* Estilo para a caixa de texto */
+.caixa-texto {
+    background-color: white;
+    /* Fundo branco */
+    padding: 20px;
+    /* Espaçamento interno */
+    border: 1px solid #ffcc00;
+    /* Borda amarela */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    max-width: 800px;
+    /* Largura máxima da caixa */
+    margin: 20px auto;
+    /* Centraliza a caixa na página */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar destaque */
+}
+
+/* Estilo do botão "Saiba Mais" */
+.botao-saiba-mais {
+    background-color: #ffcc00;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto */
+    padding: 15px 30px;
+    /* Espaçamento interno (altura e largura do botão) */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 25px;
+    /* Borda arredondada */
+    font-size: 1.2em;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s;
+    /* Transição suave para mudança de cor */
+    margin-top: 20px;
+    /* Margem acima do botão */
+}
+
+/* Efeito hover para o botão */
+.botao-saiba-mais:hover {
+    background-color: #e6b800;
+
+    /* Cor do botão ao passar o mouse */
+}
+
+p {
+    text-align: center;
+    padding: 20px;
+}
